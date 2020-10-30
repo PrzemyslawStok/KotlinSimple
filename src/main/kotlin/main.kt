@@ -3,16 +3,26 @@ import java.util.*
 fun main(){
     val b = 5
     val scanner = Scanner(System.`in`)
-    print("Zgaduj: ")
-    var no = scanner.nextInt()
     //println("Wprowadzono $no")
+    var no = 0
 
-    if(no==b){
-        println("Udało się!")
-    }
+    var i = 0
 
-    if(no>b){
-        println("Wprowadzona liczba jest za duża")
+    while(true) {
+        print("Zgaduj: ")
+        no = scanner.nextInt()
+
+        if (no == b) {
+            println("Udało się!")
+        }
+
+        if (no > b) {
+            println("Wprowadzona liczba jest za duża")
+        }
+
+        if (no < b) {
+            println("Wprowadzona liczba jest za mała")
+        }
     }
 }
 
