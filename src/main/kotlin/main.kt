@@ -1,10 +1,19 @@
 import java.util.*
 
 fun main(){
+    val b = 5
     val scanner = Scanner(System.`in`)
-    print("a=")
+    print("Zgaduj: ")
     var no = scanner.nextInt()
-    println("Wprowadzono $no")
+    //println("Wprowadzono $no")
+
+    if(no==b){
+        println("Udało się!")
+    }
+
+    if(no>b){
+        println("Wprowadzona liczba jest za duża")
+    }
 }
 
 
