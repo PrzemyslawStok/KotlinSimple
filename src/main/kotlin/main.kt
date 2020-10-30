@@ -14,4 +14,7 @@ fun main(){
     println(numbers)
     val array = IntArray(5){it}
     println(array.asList())
+
+    val tab1 = IntArray(10){it*it}
+    println(tab1.asList())
 }
