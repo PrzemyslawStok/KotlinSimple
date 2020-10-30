@@ -1,7 +1,15 @@
 import java.util.*
 
 fun main(){
+    val scanner = Scanner(System.`in`)
+    print("a=")
+    var no = scanner.nextInt()
+    println("Wprowadzono $no")
+}
 
+
+
+fun example(){
     val scanner = Scanner(System.`in`)
     print("a=")
     val a = scanner.nextInt()
