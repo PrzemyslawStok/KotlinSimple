@@ -13,7 +13,8 @@ fun main(){
         no = scanner.nextInt()
 
         if (no == b) {
-            println("Udało się!")
+            println("Udało się! po ${i} próbach")
+            break
         }
 
         if (no > b) {
