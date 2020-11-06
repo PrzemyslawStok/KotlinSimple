@@ -11,7 +11,7 @@ fun main(){
     while(true) {
         print("Zgaduj: ")
         no = scanner.nextInt()
-        i = i + 1
+        i++
 
         if (no == b) {
             println("Udało się! po ${i} próbach")
