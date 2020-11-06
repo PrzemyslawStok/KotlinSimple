@@ -1,7 +1,8 @@
 import java.util.*
 
 fun main(){
-    val b = 5
+
+    val b:Int = (Math.random()*100).toInt()
     val scanner = Scanner(System.`in`)
     //println("Wprowadzono $no")
     var no = 0
