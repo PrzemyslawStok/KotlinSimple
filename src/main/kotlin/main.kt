@@ -9,6 +9,9 @@ fun main(){
 
     var i = 0
 
+    var min  = 0
+    var max = 100
+
     while(true) {
         print("Zgaduj: ")
         no = scanner.nextInt()
@@ -20,11 +23,11 @@ fun main(){
         }
 
         if (no > b) {
-            println("Wprowadzona liczba jest za duża")
+            println("Wprowadzona liczba jest za duża [$min,$max]")
         }
 
         if (no < b) {
-            println("Wprowadzona liczba jest za mała")
+            println("Wprowadzona liczba jest za mała [$min,$max]")
         }
     }
 }
