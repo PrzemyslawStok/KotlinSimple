@@ -1,7 +1,7 @@
 import java.util.*
 
 fun main(){
-    val b = 7
+    val b = 5
     val scanner = Scanner(System.`in`)
     //println("Wprowadzono $no")
     var no = 0
