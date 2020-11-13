@@ -17,6 +17,8 @@ fun main(){
         no = scanner.nextInt()
         i++
 
+        var average = (min+max)/2
+
         if (no == b) {
             println("Udało się! po ${i} próbach")
             break
@@ -25,13 +27,13 @@ fun main(){
         if (no > b) {
 
             max = no - 1
-            println("Wprowadzona liczba jest za duża [$min,$max]")
+            println("Wprowadzona liczba jest za duża [$min,$max]=${(min+max)/2}")
         }
 
         if (no < b) {
 
             min = no + 1
-            println("Wprowadzona liczba jest za mała [$min,$max]")
+            println("Wprowadzona liczba jest za mała [$min,$max]=${(min+max)/2}")
         }
     }
 }
