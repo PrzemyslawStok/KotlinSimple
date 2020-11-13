@@ -2,7 +2,8 @@ import java.util.*
 
 fun main(){
 
-    val b:Int = (Math.random()*100).toInt()
+    var max = 100
+    val b:Int = (Math.random()*max).toInt()
     val scanner = Scanner(System.`in`)
     //println("Wprowadzono $no")
     var no = 0
@@ -10,14 +11,14 @@ fun main(){
     var i = 0
 
     var min  = 0
-    var max = 100
 
     while(true) {
         print("Zgaduj: ")
-        no = scanner.nextInt()
+        //no = scanner.nextInt()
         i++
 
         var average = (min+max)/2
+        no = average
 
         if (no == b) {
             println("Udało się! po ${i} próbach")
