@@ -9,16 +9,20 @@ fun main(){
     var no = 0
 
     var i = 0
-
     var min  = 0
+
+    var komputer = true
 
     while(true) {
         print("Zgaduj: ")
-        //no = scanner.nextInt()
         i++
 
-        var average = (min+max)/2
-        no = average
+        if(komputer) {
+            val average = (min + max) / 2
+            no = average
+        }else {
+            no = scanner.nextInt()
+        }
 
         if (no == b) {
             println("Udało się! po ${i} próbach")
@@ -28,13 +32,13 @@ fun main(){
         if (no > b) {
 
             max = no - 1
-            println("Wprowadzona liczba jest za duża [$min,$max]=${(min+max)/2}")
+            println("Wprowadzona liczba jest za duża [$min,$max]")
         }
 
         if (no < b) {
 
             min = no + 1
-            println("Wprowadzona liczba jest za mała [$min,$max]=${(min+max)/2}")
+            println("Wprowadzona liczba jest za mała [$min,$max]")
         }
     }
 }
