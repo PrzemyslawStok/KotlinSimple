@@ -23,11 +23,14 @@ fun main(){
         }
 
         if (no > b) {
+
             max = no - 1
             println("Wprowadzona liczba jest za duża [$min,$max]")
         }
 
         if (no < b) {
+
+            min = no + 1
             println("Wprowadzona liczba jest za mała [$min,$max]")
         }
     }
